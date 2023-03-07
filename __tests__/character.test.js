@@ -15,7 +15,7 @@ describe('Character', () => {
   test('should give attributes to the character', () => {
     expect(character.strStat).toEqual(5);
     expect(character.spdStat).toEqual(1);
-    expect(character.intStat).toEqual(1);
+    expect(character.defStat).toEqual(1);
     expect(character.endStat).toEqual(2);
   });
 
