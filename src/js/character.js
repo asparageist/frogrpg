@@ -27,12 +27,13 @@ export default class Character {
   levelUp() {
     let exp = this.experience;
     let lvl = this.level;
-    let returnArray = [0 , 1];
+    let statLvl = this.strStat;
+    let returnArray = [0 , 1, 2];
     if (exp >= 100) {
       exp = 0;
       lvl += 1;
-
-      returnArray = [exp, lvl];
+      statLvl += 1;
+      returnArray = [exp, lvl, statLvl];
       return returnArray;
     }
   }

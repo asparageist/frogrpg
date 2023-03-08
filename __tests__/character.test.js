@@ -27,4 +27,8 @@ describe('Character', () => {
     expect(character.levelUp()[0]).toEqual(0);
     expect(character.levelUp()[1]).toEqual(2);
   });
+
+  test('should increase a stat upon levelling up', () => {
+    expect(character.levelUp()[2]).toEqual(6);
+  });
 });
