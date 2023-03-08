@@ -1,4 +1,3 @@
-
 export default class Battle {
   constructor(attack, speed, speed2, defense, endurance) {
     this.attack = attack;
