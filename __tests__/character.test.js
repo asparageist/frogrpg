@@ -4,7 +4,7 @@ describe('Character', () => {
   let character;
 
   beforeEach(() => {
-    character = new Character("biff", "croakinsen",5,1,1,2);
+    character = new Character("biff", "croakinsen",5,1,1,2,100,1);
   });
 
   test('should create a character object with a name', () => {
@@ -23,4 +23,8 @@ describe('Character', () => {
     expect(character.getClass()).toEqual("berserker");
   });
 
+  test('should level a character stats up when 100 experience is gained', () => {
+    expect(character.levelUp()[0]).toEqual(0);
+    expect(character.levelUp()[1]).toEqual(2);
+  });
 });
